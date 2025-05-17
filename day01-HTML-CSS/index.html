@@ -3,117 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quán ăn đường phố với hương vị đặc trưng">
-    <title>Quán Ăn Đường Phố - Hương Vị Đặc Trưng</title>
+    <meta name="description" content="Jayce Restaurant - Nhà hàng Á Âu với hương vị đặc trưng từ năm 2003">
+    <title>Jayce Restaurant - Nhà hàng Á Âu Since 2003</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon">&#9776;</div>
+        <nav class="dropdown-menu">
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#featured">Món Đặc Trưng</a></li>
+                <li><a href="#menu">Thực Đơn</a></li>
+                <li><a href="#why-us">Tại Sao Chọn Chúng Tôi</a></li>
+                <li><a href="#footer">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="container">
             <div class="header__content">
-                <h1 class="header__title">Quán Ăn Đường Phố</h1>
-                <p class="header__slogan">Hương vị đặc trưng - Giá cả phải chăng</p>
+                <p class="header__since">Since 2003</p>
+                <h1 class="header__title">Jayce Restaurant</h1>
+                <p class="header__slogan">Ẩm thực Á - Âu đẳng cấp</p>
+                <div class="header__cta">
+                    <h2>Khám Phá Ẩm Thực Á - Âu</h2>
+                    <p>Trải nghiệm hương vị độc đáo kết hợp giữa ẩm thực Á - Âu</p>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <h2>Khám Phá Hương Vị Đường Phố</h2>
-                    <p>Trải nghiệm ẩm thực đường phố độc đáo với những món ăn đặc trưng</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="featured">
+        <section class="featured" id="featured">
             <div class="container">
                 <h2 class="section-title">Món Ăn Đặc Trưng</h2>
                 <div class="featured__grid">
                     <article class="featured__card">
-                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d" alt="Phở bò" class="featured__image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e" alt="Bò Wagyu" class="featured__image">
                         <div class="featured__content">
-                            <h3>Phở Bò</h3>
-                            <p>Phở bò truyền thống với nước dùng đậm đà, thịt bò tươi ngon</p>
+                            <h3>Bò Wagyu</h3>
+                            <p>Thịt bò Wagyu A5 với nước sốt rượu vang đỏ đặc biệt</p>
                         </div>
                     </article>
                     <article class="featured__card">
-                        <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246" alt="Bún chả" class="featured__image">
+                        <img src="https://images.unsplash.com/photo-1730698306944-544a5cb282e3" alt="Cua Hoàng Đế" class="featured__image">
                         <div class="featured__content">
-                            <h3>Bún Chả</h3>
-                            <p>Bún chả Hà Nội với thịt nướng thơm ngon, nước mắm đặc biệt</p>
+                            <h3>Cua Hoàng Đế</h3>
+                            <p>Cua Alaska tươi ngon với sốt bơ tỏi thơm lừng</p>
                         </div>
                     </article>
                     <article class="featured__card">
-                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe" alt="Bánh mì" class="featured__image">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Sushi Set" class="featured__image">
                         <div class="featured__content">
-                            <h3>Bánh Mì</h3>
-                            <p>Bánh mì thịt nguội với pate đặc biệt và rau sống tươi ngon</p>
+                            <h3>Sushi Set</h3>
+                            <p>Set sushi cao cấp với nguyên liệu nhập khẩu từ Nhật Bản</p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="menu">
+        <section class="menu" id="menu">
             <div class="container">
                 <h2 class="section-title">Thực Đơn</h2>
                 <div class="menu__grid">
                     <div class="menu__item">
-                        <h3>Phở Bò</h3>
-                        <p class="menu__price">45.000đ</p>
-                        <p class="menu__description">Nước dùng đậm đà, thịt bò tươi ngon</p>
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e" alt="Bò Wagyu" class="menu__image">
+                        <h3>Bò Wagyu A5</h3>
+                        <p class="menu__price">1.200.000đ</p>
+                        <p class="menu__description">200g thịt bò Wagyu A5 với nước sốt rượu vang đỏ</p>
                     </div>
                     <div class="menu__item">
-                        <h3>Bún Chả</h3>
-                        <p class="menu__price">40.000đ</p>
-                        <p class="menu__description">Thịt nướng thơm ngon, nước mắm đặc biệt</p>
+                        <img src="https://images.unsplash.com/photo-1730698306944-544a5cb282e3" alt="Cua Hoàng Đế" class="menu__image">
+                        <h3>Cua Hoàng Đế</h3>
+                        <p class="menu__price">2.500.000đ</p>
+                        <p class="menu__description">1kg cua Alaska với sốt bơ tỏi</p>
                     </div>
                     <div class="menu__item">
-                        <h3>Bánh Mì</h3>
-                        <p class="menu__price">25.000đ</p>
-                        <p class="menu__description">Pate đặc biệt, thịt nguội, rau sống</p>
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="Sushi Set" class="menu__image">
+                        <h3>Sushi Set</h3>
+                        <p class="menu__price">850.000đ</p>
+                        <p class="menu__description">Set 12 miếng sushi với nguyên liệu nhập khẩu</p>
                     </div>
                     <div class="menu__item">
-                        <h3>Nước Ép</h3>
-                        <p class="menu__price">20.000đ</p>
-                        <p class="menu__description">Cam, chanh, dưa hấu tươi mát</p>
+                        <img src="https://images.unsplash.com/photo-1711989874707-6a5ffe1798c5" alt="Lobster Thermidor" class="menu__image">
+                        <h3>Lobster Thermidor</h3>
+                        <p class="menu__price">1.800.000đ</p>
+                        <p class="menu__description">Tôm hùm nướng sốt kem phô mai và rượu vang trắng</p>
+                    </div>
+                    <div class="menu__item">
+                        <img src="https://images.unsplash.com/photo-1673912401286-28ca0dbd17fd" alt="Foie Gras" class="menu__image">
+                        <h3>Gan Ngỗng Béo</h3>
+                        <p class="menu__price">950.000đ</p>
+                        <p class="menu__description">Gan ngỗng béo với sốt trái cây và bánh mì nướng</p>
+                    </div>
+                    <div class="menu__item">
+                        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d" alt="Rượu Vang" class="menu__image">
+                        <h3>Rượu Vang</h3>
+                        <p class="menu__price">1.500.000đ</p>
+                        <p class="menu__description">Chai rượu vang đỏ Pháp hảo hạng</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="why-us">
+        <section class="why-us" id="why-us">
             <div class="container">
                 <h2 class="section-title">Tại Sao Chọn Chúng Tôi?</h2>
                 <div class="why-us__grid">
                     <div class="why-us__item">
-                        <h3>Hương Vị Đặc Trưng</h3>
-                        <p>Công thức nấu ăn được truyền qua nhiều thế hệ, đảm bảo hương vị đặc trưng</p>
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" alt="Đầu bếp chuyên nghiệp" class="why-us__image">
+                        <h3>Hương Vị Đẳng Cấp</h3>
+                        <p>Đầu bếp chuyên nghiệp với hơn 20 năm kinh nghiệm</p>
                     </div>
                     <div class="why-us__item">
-                        <h3>Nguyên Liệu Tươi</h3>
-                        <p>Sử dụng nguyên liệu tươi ngon, được chọn lọc kỹ lưỡng mỗi ngày</p>
+                        <img src="https://images.unsplash.com/photo-1609149401319-989d289bddb9" alt="Nguyên liệu cao cấp" class="why-us__image">
+                        <h3>Nguyên Liệu Cao Cấp</h3>
+                        <p>Sử dụng nguyên liệu nhập khẩu tươi ngon mỗi ngày</p>
                     </div>
                     <div class="why-us__item">
-                        <h3>Giá Cả Phải Chăng</h3>
-                        <p>Mức giá hợp lý, phù hợp với chất lượng và khẩu phần ăn</p>
+                        <img src="https://images.unsplash.com/photo-1621873495868-6c5774cf6012" alt="Không gian sang trọng" class="why-us__image">
+                        <h3>Không Gian Sang Trọng</h3>
+                        <p>Không gian thiết kế hiện đại, view đẹp và ấm cúng</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__contact">
                     <h3>Liên Hệ</h3>
                     <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
                     <p>Điện thoại: 0123 456 789</p>
-                    <p>Email: info@quananduongpho.com</p>
+                    <p>Email: info@jaycerestaurant.com</p>
                 </div>
                 <div class="footer__social">
                     <h3>Theo Dõi Chúng Tôi</h3>
@@ -124,7 +152,7 @@
                 </div>
             </div>
             <div class="footer__copyright">
-                <p>&copy; 2024 Quán Ăn Đường Phố. All rights reserved.</p>
+                <p>&copy; 2024 Jayce Restaurant. All rights reserved.</p>
             </div>
         </div>
     </footer>
