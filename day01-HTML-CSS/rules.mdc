@@ -1,0 +1,350 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Street Food Restaurant Landing Page Rules
+
+## Project Structure
+```
+day01-HTML-CSS/
+├── index.html          # Main landing page
+└── css/
+    └── style.css      # Main stylesheet
+```
+
+## Design Requirements
+
+### Color Scheme
+- Primary: #FF6B35 (Warm Orange)
+- Secondary: #2EC4B6 (Teal)
+- Background: #FFFBF1 (Warm White)
+- Text: #2D3142 (Dark Gray)
+- Accent: #FF9F1C (Warm Yellow)
+
+### Typography
+- Headings: 'Poppins', sans-serif
+- Body: 'Open Sans', sans-serif
+- Font sizes:
+  - h1: 2.5rem
+  - h2: 2rem
+  - h3: 1.5rem
+  - Body: 1rem
+
+## HTML Structure
+
+### Required Meta Tags
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Authentic street food experience">
+```
+
+### Font Imports
+```html
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+```
+
+### Main Sections
+
+#### Header
+```html
+<header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <h1>Street Food Name</h1>
+            <p class="header__slogan">Authentic Street Food Experience</p>
+        </div>
+        <nav class="header__nav">
+            <!-- Navigation items -->
+        </nav>
+    </div>
+</header>
+```
+
+#### Hero Section
+```html
+<section class="hero">
+    <div class="hero__content">
+        <h2>Delicious Street Food</h2>
+        <p>Experience authentic flavors</p>
+        <a href="#menu" class="btn btn--primary">View Menu</a>
+    </div>
+</section>
+```
+
+#### Featured Dishes
+```html
+<section class="featured">
+    <h2>Our Specialties</h2>
+    <div class="featured__grid">
+        <!-- Featured dish cards -->
+    </div>
+</section>
+```
+
+#### Menu Section
+```html
+<section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu__container">
+        <!-- Menu items -->
+    </div>
+</section>
+```
+
+#### Why Choose Us
+```html
+<section class="why-us">
+    <h2>Why Choose Us</h2>
+    <div class="why-us__grid">
+        <!-- Three reasons -->
+    </div>
+</section>
+```
+
+#### Footer
+```html
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__contact">
+            <!-- Contact information -->
+        </div>
+        <div class="footer__social">
+            <!-- Social media links -->
+        </div>
+    </div>
+</footer>
+```
+
+## CSS Structure
+
+### CSS Variables
+```css
+:root {
+    /* Colors */
+    --color-primary: #FF6B35;
+    --color-secondary: #2EC4B6;
+    --color-background: #FFFBF1;
+    --color-text: #2D3142;
+    --color-accent: #FF9F1C;
+    
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    
+    /* Breakpoints */
+    --breakpoint-mobile: 768px;
+    --breakpoint-tablet: 1024px;
+}
+```
+
+### Base Styles
+```css
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    line-height: 1.6;
+    background-color: var(--color-background);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+```
+
+### Component Styles
+
+#### Header
+```css
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-background);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+}
+
+.header__nav {
+    display: flex;
+    gap: var(--spacing-md);
+}
+```
+
+#### Hero Section
+```css
+.hero {
+    height: 80vh;
+    background-image: url('path-to-hero-image');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero__content {
+    max-width: 800px;
+    padding: var(--spacing-md);
+}
+```
+
+#### Featured Dishes
+```css
+.featured__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+}
+
+.featured__card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.featured__card:hover {
+    transform: translateY(-5px);
+}
+```
+
+#### Menu Section
+```css
+.menu__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+.menu__item {
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: var(--spacing-sm);
+    background: white;
+    border-radius: 8px;
+}
+```
+
+#### Why Choose Us
+```css
+.why-us__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    text-align: center;
+}
+
+.why-us__item {
+    padding: var(--spacing-md);
+}
+```
+
+#### Footer
+```css
+.footer {
+    background-color: var(--color-text);
+    color: white;
+    padding: var(--spacing-lg) 0;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+```
+
+### Responsive Design
+```css
+/* Mobile First Approach */
+@media (min-width: 768px) {
+    .header__nav {
+        display: flex;
+    }
+    
+    .menu__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+```
+
+### Utility Classes
+```css
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn--primary:hover {
+    background-color: var(--color-accent);
+}
+```
+
+## Image Requirements
+- Use images from Unsplash or Imgur
+- Optimize for web
+- Maintain aspect ratios
+- Lazy loading implementation
+
+## Best Practices
+- Use CSS Grid for 2D layouts
+- Use Flexbox for 1D layouts
+- Implement mobile-first approach
+- Use CSS variables for consistency
+- Keep specificity low
+- Use BEM naming convention
+- Optimize for performance
+- Include fallbacks for older browsers
+- Write clean, well-commented code
+- Use meaningful class names
+- Regular commits with meaningful messages
