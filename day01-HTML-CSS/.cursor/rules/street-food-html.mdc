@@ -3,3 +3,62 @@ description:
 globs:
 alwaysApply: false
 ---
+# HTML Structure Rules
+
+## Required Meta Tags
+- UTF-8 character set
+- Viewport meta tag for responsive design
+- Description meta tag for SEO
+- Google Fonts import (Poppins and Open Sans)
+
+## Main Sections
+1. Header
+   - Logo
+   - Navigation menu
+   - Mobile menu button
+
+2. Hero Section
+   - Background image
+   - Main heading
+   - Subheading
+   - Call-to-action button
+
+3. Featured Dishes
+   - Section heading
+   - Grid of featured items
+   - Each item should have image and description
+
+4. Menu Section
+   - Section heading
+   - Menu categories
+   - Menu items with prices
+
+5. Why Choose Us
+   - Section heading
+   - Grid of features
+   - Icons and descriptions
+
+6. Footer
+   - Contact information
+   - Social media links
+   - Copyright notice
+
+## Required Classes
+- Use BEM naming convention
+- Container classes for layout
+- Section-specific classes
+- Utility classes for common elements
+
+## Semantic Elements
+- Use appropriate HTML5 semantic elements
+- Maintain proper heading hierarchy
+- Use descriptive alt text for images
+- Include ARIA labels where needed
+
+## Accessibility Requirements
+- Proper heading structure
+- Alt text for images
+- ARIA labels for interactive elements
+- Semantic HTML elements
+- Proper form labels
+- Focus states for interactive elements

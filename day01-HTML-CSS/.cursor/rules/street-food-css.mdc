@@ -3,3 +3,70 @@ description:
 globs:
 alwaysApply: false
 ---
+# CSS Styling Rules
+
+## CSS Variables
+- Define color palette
+- Define typography settings
+- Define spacing units
+- Define breakpoints
+
+## Base Styles
+- Reset default styles
+- Set base typography
+- Define container widths
+- Set base colors
+
+## Component Styles
+- Header styling
+- Hero section styling
+- Featured dishes grid
+- Menu section layout
+- Why choose us section
+- Footer styling
+
+## Responsive Design Levels
+
+### Level 1: Mobile First (Default)
+- Base styles for mobile
+- Single column layouts
+- Appropriate font sizes
+- Touch-friendly elements
+
+### Level 2: Tablet (768px - 1023px)
+- Two-column layouts
+- Adjusted spacing
+- Larger font sizes
+- Enhanced navigation
+
+### Level 3: Desktop (1024px and above)
+- Multi-column layouts
+- Maximum container width
+- Optimized typography
+- Hover effects
+
+## Additional Features
+- Dark mode support
+- Reduced motion preferences
+- Print styles
+- High contrast mode
+
+## Best Practices
+- Use CSS Grid for 2D layouts
+- Use Flexbox for 1D layouts
+- Implement mobile-first approach
+- Use CSS variables for consistency
+- Keep specificity low
+- Use BEM naming convention
+- Optimize for performance
+- Include fallbacks for older browsers
+
+## Performance Guidelines
+- Minimize CSS file size
+- Use efficient selectors
+- Optimize media queries
+- Reduce repaints and reflows
+- Use hardware acceleration when needed
+- Implement lazy loading for images
+- Minimize use of box-shadows and gradients
+- Use transform and opacity for animations
