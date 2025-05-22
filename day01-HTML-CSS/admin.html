@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Jayce Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .admin-container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 2rem; }
+        .admin-title { text-align: center; color: #FF6B00; margin-bottom: 2rem; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+        th, td { padding: 0.75rem 0.5rem; border-bottom: 1px solid #eee; text-align: left; }
+        th { background: #f7f7f7; color: #FF6B00; }
+        td img { width: 60px; height: 40px; object-fit: cover; border-radius: 4px; }
+        .action-btn { background: #FF6B00; color: #fff; border: none; border-radius: 4px; padding: 0.3rem 0.8rem; cursor: pointer; margin-right: 0.5rem; }
+        .action-btn.edit { background: #FF8533; }
+        .action-btn.delete { background: #d32f2f; }
+        .signature-true { color: #2ecc40; font-size: 1.3em; }
+        .signature-false { color: #aaa; font-size: 1.3em; }
+        .admin-form { max-width: 500px; margin: 0 auto; background: #fafafa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+        .admin-form label { display: block; margin-bottom: 0.3rem; font-weight: 500; }
+        .admin-form input, .admin-form textarea, .admin-form select { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px; }
+        .admin-form input[type="checkbox"] { width: auto; margin-right: 0.5rem; }
+        .admin-form .form-actions { text-align: right; }
+        .admin-form .btn { background: #FF6B00; color: #fff; border: none; border-radius: 4px; padding: 0.5rem 1.2rem; cursor: pointer; }
+        .admin-form .btn:hover { background: #FF8533; }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1 class="admin-title">Jayce Restaurant Admin Dashboard</h1>
+        <h2>Menu Management</h2>
+        <table id="menu-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                    <th>Category</th>
+                    <th>Signature</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Menu items will be rendered here -->
+            </tbody>
+        </table>
+        <h2>Add / Edit Menu Item</h2>
+        <form id="menu-form" class="admin-form">
+            <input type="hidden" id="item-id" name="id">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+            <label for="image">Image URL</label>
+            <input type="url" id="image" name="image" required>
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+                <option value="asian">Asian</option>
+                <option value="european">European</option>
+                <option value="drink">Drink</option>
+            </select>
+            <label><input type="checkbox" id="signature" name="signature"> Signature dish</label>
+            <div class="form-actions">
+                <button type="submit" class="btn">Save</button>
+                <button type="button" class="btn" id="form-cancel" style="background:#aaa;">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html> 
