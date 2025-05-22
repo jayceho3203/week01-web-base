@@ -57,6 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
     greet();
     fetchMenu();
 
+    // Add smooth scroll for logo click
+    const logo = document.querySelector('.logo');
+    if (logo) {
+        logo.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
     const tabs = document.querySelectorAll('.menu-tab-btn');
     tabs.forEach(btn => {
         btn.addEventListener('click', () => {
